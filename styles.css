@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #C4DACF;
+  font-family: 'Raleway', sans-serif;
+  color: #2B2D42;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #D9E7E0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2B2D42;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #383B56;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+header {
+  font-size: 22px;
+  text-align: center;
+  margin: 20px 30px;
+}
+
+#navbar header {
+  border-bottom: 1px solid #63585E;
+  font-weight: 700;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 310px;
+  width: 320px;
+  height: 100%;
+}
+
+#navbar ul {
+  padding: 0;
+  height: 90%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  list-style: none;
+  width: 100%;
+  position: relative;
+  padding: 10px 30px 15px 30px;
+  text-align: center;
+}
+
+#navbar a {
+  font-size: 17px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+#navbar a:hover {
+  cursor: pointer;
+  background-color: #99ADA7;
+  color: #D9E7E0;
+}
+
+#main-doc {
+  position: absolute;
+  top: 0;
+  left: 330px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+#main-doc header {
+  margin: 0;
+  border-bottom: 1px solid #63585E;
+  text-align: left;
+  font-weight: 600;
+}
+
+#main-doc a {
+  text-decoration: underline;
+}
+
+.main-section {
+  margin-bottom: 15px;
+}
+
+.main-section p {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main-section img {
+  width: 400px;
+  margin-top: 10px;
+}
+
+.fig-caption {
+  padding-left: 25px;
+}
+
+pre {
+  background-color: #A4B6B1;
+  text-align: left;
+  border-radius: 10px;
+  color: #3D405B;
+  white-space: normal;
+  width: 500px;
+  padding: 20px;
+}
+
+.yellow {
+  color: #895F58;
+}
+
+.tips {
+  font-size: 13px;
+  text-align: left;
+  border-radius: 10px;
+  border: 3px solid #A4B6B1;
+  color: #3D405B;
+  width: 500px;
+  padding: 20px;
+}
+
+ @media screen and (max-width: 600px) {
+   #navbar {
+     position: relative;
+     min-width: 140px;
+     width: 80%;
+   }
+   #navbar li {
+     padding: 5px 15px 7px 15px;
+   }
+   #navbar a {
+     font-size: 14px;
+   }
+ }
+
+ @media screen and (max-width: 600px) {
+   #main-doc {
+     position: absolute;
+     top: 130vw;
+     left: 0px;
+     font-size: 14px;
+   }
+ }
